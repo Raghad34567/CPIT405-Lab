@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CPIT405 - Lab</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .image-preview img {
+            border: 30px solid;
+            border-top-color: skyblue;
+            border-right-color: lightpink;
+            border-bottom-color: lightgreen;
+            border-left-color: #ffefd5;
+        }
+
+        .section {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f8f9fa;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .selector {
+            font-weight: bold;
+            font-family: monospace;
+            text-align: left;
+        }
+
+        .color-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-weight: bold;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="section">
+        <h2>Question 1</h2>
+        <div class="image-preview">
+            <img src="https://cpit405.gitlab.io/images/KAU_logo.png" alt="KAU Logo">
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Question 2</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>color</th>
+                    <th>color when mouse over</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="selector">span.myclass1</td>
+                    <td><span class="color-badge" style="background-color: pink;">pink</span></td>
+                    <td><span class="color-badge" style="background-color: blue; color: white;">blue</span></td>
+                </tr>
+                <tr>
+                    <td class="selector">span.myclass2</td>
+                    <td><span class="color-badge" style="background-color: pink;">pink</span></td>
+                    <td><span class="color-badge" style="background-color: pink;">pink</span></td>
+                </tr>
+                <tr>
+                    <td class="selector">span.myclass3</td>
+                    <td><span class="color-badge" style="background-color: orange;">orange</span></td>
+                    <td><span class="color-badge" style="background-color: orange;">orange</span></td>
+                </tr>
+                <tr>
+                    <td class="selector">span.myclass4</td>
+                    <td><span class="color-badge" style="background-color: red; color: white;">red</span></td>
+                    <td><span class="color-badge" style="background-color: red; color: white;">red</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
