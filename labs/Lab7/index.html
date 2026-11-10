@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 7 - AJAX Photo Search</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Lab 7 - Photo Search API</h1>
+      <p>Search images using XMLHttpRequest, Fetch Promises, or Async/Await.</p>
+    </header>
+    <section class="settings" aria-label="API settings">
+      <label for="apiKey">Unsplash Access Key</label>
+      <input id="apiKey" type="password" placeholder="Paste your Access Key for this session" autocomplete="off" spellcheck="false">
+      <p class="hint">For classroom testing only. Do not put your key into GitHub or embed it in source files.</p>
+    </section>
+    <section class="toolbar" aria-label="Photo search">
+      <label class="sr-only" for="searchInput">Search photos</label>
+      <input id="searchInput" type="search" value="Makkah" placeholder="Search photos, e.g. Makkah">
+      <button id="xhrButton" type="button">Search using XHR</button>
+      <button id="promisesButton" type="button">Search using fetch (promises)</button>
+      <button id="asyncButton" type="button">Search using fetch (async/await)</button>
+    </section>
+    <p id="status" class="status" role="status" aria-live="polite">Enter an Access Key and choose a search method.</p>
+    <section id="gallery" class="gallery" aria-label="Search results"></section>
+    <footer>Photos provided by <a href="https://unsplash.com/?utm_source=lab7_ajax_demo&utm_medium=referral" target="_blank" rel="noopener noreferrer">Unsplash</a>. Photographer credits appear on each image.</footer>
+  </main>
+</body>
+</html>
